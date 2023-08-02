@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Tasarımı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+/*Responsive düzenlemeleri start*/
+        /* Ekran 992px den daha büyükler için kullan */
+        @media (min-width: 992px) {
+            .container {
+                width: 1200px;
+            }
+            pre {
+            font-family: monospace;
+            font-size: small;
+            white-space: pre;
+            color: white;
+            background: rgba(23, 22, 22, 0.746);
+            }
+            body{
+                font-size: large;
+            }
+        }
+
+        /* Ekran 768px ve 991px arasındaysa kullan */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .container {
+                width: 768px;
+            }
+            pre {
+            font-family: monospace;
+            font-size: smaller;
+            white-space: pre;
+            color: white;
+            background: rgba(23, 22, 22, 0.746);
+            }
+            body{
+                font-size: medium;
+            }
+        }
+
+        /* Ekran 480px ve 767px arasındaysa kullan */
+        @media (min-width: 480px) and (max-width: 767px) {
+            .container {
+                width: 480px;
+            }
+            pre {
+            font-family: monospace;
+            font-size:x-small;
+            white-space: pre;
+            color: white;
+            background: rgba(23, 22, 22, 0.746);
+            }
+            
+            body{
+                font-size: small;
+            }
+        }
+
+        /* Ekran 480px den küçükler için kullan */
+        @media (max-width: 479px) {
+            .container {
+                width: 100%;
+            }
+            pre {
+            font-family: monospace;
+            font-size:xx-small;
+            white-space: pre;
+            color: white;
+            background: rgba(23, 22, 22, 0.746);
+            }
+            body{
+                font-size: smaller;
+            }
+        }
+/*Responsive düzenlemeleri End*/
+        
+        ol li{
+            display:inline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; background: #5e5c5c4c; padding: 10px; margin-top: 1px; border-style:groove; border-color: black;">
+        Responsive Tasarımı
+    </h1> 
+<!--container start-->
+    <div class="container mt-4">
+<!--1.row start-->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3 style="text-align: center;">Responsive Tasarımı Nedir?</h3>
+                <p>
+                    Responsive tasarım, web sitelerinin farklı cihazlarda (bilgisayar, tablet, mobil gibi) farklı ekran boyutlarında ve çözünürlüklerinde doğru bir şekilde görüntülenmesini sağlamak için kullanılan bir tasarım yaklaşımıdır. 
+                </p>
+                <p>
+                    Responsive tasarımının faydalarından biri, web sitelerinin daha iyi performans göstermesini sağlamasıdır. Responsive tasarım, web sitesinin içeriğini ekran boyutuna göre optimize eder ve bu da web sitesinin daha hızlı yüklenmesine yardımcı olur. Daha hızlı yüklenen web siteleri, kullanıcıların web sitenizi daha iyi deneyimlemelerini sağlar. Aynı zamanda Responsive tasarımı kullanmak uygulamanın arama motorlarında da üst sıralarda çıkmasına yardımcı olur.
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+<!--1.row end-->
+<!--2.row start-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="codepanel">
+                    <code>
+                        <pre>
+                            <ol>
+<li><span><</span>!DOCTYPE html></li>
+<li><span><</span>html lang="en"></li>
+<li><span><</span>head></li>
+<li>    <span><</span>meta charset="UTF-8"></li>
+<li>    <span><</span>meta name="viewport" content="width=device-width, initial-scale=1"></li>
+<li>    <span><</span>title>Bootstrap Responsive Örneği<span><</span>/title></li>
+<li>    <span><</span>link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"></li>
+<li>    <span><</span>style></li>
+<li><span>        /* Ekran 992px den daha büyükler için kullan */</li>
+<li>        @media (min-width: 992px) {</li>
+<li>            .container {</li>
+<li>                width: 1200px;</li>
+<li>            }</li>
+<li>        }</li>
+<li> </li>
+<li>        /* Ekran 768px ve 991px arasındaysa kullan */</li>
+<li>        @media (min-width: 768px) and (max-width: 991px) {</li>
+<li>            .container {</li>
+<li>                width: 768px;</li>
+<li>            }</li>
+<li>        }</li>
+<li> </li>
+<li>        /* Ekran 480px ve 767px arasındaysa kullan */</li>
+<li>        @media (min-width: 480px) and (max-width: 767px) {</li>
+<li>            .container {</li>
+<li>                width: 480px;</li>
+<li>            }</li>
+<li>        }</li>
+<li> </li>
+<li>        /* Ekran 480px den küçükler için kullan */</li>
+<li>        @media (max-width: 479px) {</li>
+<li>            .container {</li>
+<li>                width: 100%;</li>
+<li>            }</li>
+<li>        }</span></li>
+<li>    <span><</span>/style></li>
+<li><span><</span>/head></li>
+<li><span><</span>body></li>
+<li>    <span><</span>div class="container"></li>
+<li>        <span><</span>h1 style="text-align: center;">BAŞLIK<<span>/h1></span></li>
+<li>        <span><</span>p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti animi recusandae minus qui </li>rerum voluptatibus sequi labore harum illo deserunt libero quam blanditiis saepe quisquam, repellendus modi nulla sit consectetur.<<span>/p></span>
+<li>        <span><</span>div class="row"></li>
+<li>            <span><</span>div class="col-md-6" style="background-color: bisque;"></li>
+<li>                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, minima. Repellendus qui vel hic </li>dolorum tempore. Cupiditate saepe possimus ipsam repellat consectetur non iusto eius debitis voluptates voluptatibus quibusdam rerum modi, amet ducimus error exercitationem quas ratione. Iure ut incidunt adipisci consequatur sapiente, tempore ducimus, qui explicabo aut vel earum.</span>
+<li>            <span><</span>/div></li>
+<li>            <span><</span>div class="col-md-6" style="background-color: cornflowerblue;"></li>
+<li>                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quibusdam delectus veniam! </li>Debitis fugiat alias adipisci exercitationem rem, ratione ullam quas sequi minima esse maxime ab consequatur! Qui porro necessitatibus deleniti labore dolorum reprehenderit maxime nesciunt itaque dolor hic ad a, quisquam error aut quo illo sunt consequatur distinctio delectus.</span>
+<li>            <span><</span>/div></li>
+<li>        <span><</span>/div></li>
+<li>    <span><</span>/div></li>
+<li><span><</span>/body></li>
+<li><span><</span>/html></li>
+                        </ol>
+                    </pre>
+                </code>
+            </div>
+            <p style="font-style: italic; text-align: center; font-size: small;">
+                Responsive tasarımı örnek kullanımı.
+            </p>
+            </div>
+            <hr>
+        </div>
+<!--2.row end-->
+<!--3.row start-->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3 style="text-align: center;">Grid Nedir?</h3>
+                <p>12lik grid sistemi, responsive tasarımda kullanılan bir ızgara sistemidir. Bu sistem, web sitesinin içeriğini 12 sütuna böler ve bu sütunları farklı şekilde konumlandırmaya olanak tanır. 12lik grid sistemi, web sitelerinin daha düzenli ve tutarlı görünmesini sağlar.
+                </p>
+                <p>
+                    12lik grid sistemi, responsive tasarımın en önemli unsurlarından biridir. Bu sistem sayesinde web siteleri, farklı cihazlarda farklı görünümlere sahip olsalar bile, aynı düzeni ve tutarlılığı korur. Bu da kullanıcıların web sitesini daha kolay kullanmasına ve daha iyi bir deneyim yaşamalarına yardımcı olur.
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+<!--3.row End-->
+<!--4.row start-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="codepanel">
+                    <code>
+                        <pre>
+                            <ol>
+<li><span><</span>!DOCTYPE html></li>
+<li><span><</span>html lang="en"></li>
+<li><span><</span>head></li>
+<li><span>  <</span>meta charset="UTF-8"></li>
+<li><span>  <</span>meta name="viewport" content="width=device-width, initial-scale=1"></li>
+<li><span>  <</span>title>Bootstrap Responsive Örneği<span><</span>/title></li>
+<li><span>  <</span>link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"></li>
+<li><span><</span>/head></li>
+<li><span><</span>body></li>
+<li><span>  <</span>div class="container"></li>
+<li><span>      <</span>h1>BAŞLIK<<span>/h1></span></li>
+<li><span>      <</span>p>Paragraf<<span>/p></span></li>
+<li><span>      <</span>div class="row"></li>
+<li><span>          <</span>div class="col-md-6"></li>
+<li><span>              12'lik grid sisteminde iki adet col-6 div'i oluşturup sayfa bu şekilde ikiye bölünebilir. </span></li>
+<li><span>          <</span>/div></li>
+<li><span>          <</span>div class="col-md-6"></li>
+<li><span>              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo ab hic adipisci autem sed, empore fuga, harum qui possimus.</span>
+<li><span>          <</span>/div></li>
+<li><span>      <</span>/div></li>
+<li><span>  <</span>/div></li>
+<li><span><</span>/body></li>
+<li><span><</span>/html></li>
+                            </ol>
+                        </pre>
+                    </code>
+                </div>
+            </div>
+        </div>
+                <p style="font-style: italic; text-align: center; font-size: small;">
+                    Grid örnek kullanımı.
+                </p>
+<!--4.row End-->
+                <hr>
+<!--5.row start-->
+        <div class="row">
+            <div class="col-md-6">
+                <h3 style="text-align: center;">Mobile First Nedir?</h3>
+                <p>
+                    Mobile first, web tasarımında kullanılan bir yaklaşımdır. Bu yaklaşımda, web sitesi ilk olarak mobil cihazlar için tasarlanır ve ardından masaüstü bilgisayarlar için uyarlanır. Mobile first yaklaşımının en önemli avantajlarından biri, web sitesinin mobil cihazlarda daha iyi görünmesini ve kullanılmasını sağlamasıdır. Bu, mobil cihazların giderek daha popüler hale gelmesi nedeniyle önemlidir.
+                </p>
+                <p>
+                    Mobile first yaklaşımı, web sitesinin SEO performansını da iyileştirebilir. Google, mobil uyumlu web sitelerini daha üst sıralarda sıralama eğilimindedir. Bu nedenle, mobile first yaklaşımı, web sitelerinin daha fazla ziyaretçi çekmesine yardımcı olabilir.
+                </p>
+            </div>
+            <div class="col-md-6" style="border-left-style: double; border-color: rgba(60, 58, 58, 0.495);">
+                <h3 style="text-align: center;">Desktop Nedir?</h3>
+                <p>
+                    Desktop first yaklaşımında, web sitesi ilk olarak masaüstü bilgisayarlar için tasarlanır. Bu, web sitesinin masaüstü bilgisayarların ekran boyutlarına ve kullanıcı deneyimine uygun olarak tasarlanması anlamına gelir. Web sitesi tasarlandıktan sonra, diğer cihazlar için uyarlanır. Bu, web sitesinin diğer cihazlarda da iyi görünmesini ve kullanılmasını sağlar.
+                </p>
+            </div>
+        </div>
+<!--5.row End-->
+<!--Footer Start-->
+                <footer style="margin: 5%;"> 
+                </footer>
+<!--Footer End-->
+    </div><!--container end-->
+</body>
+</html>
